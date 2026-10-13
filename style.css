@@ -1,0 +1,49 @@
+
+body {
+    background-color: rgb(181, 146, 192);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+h1{
+    font-family: 'Helvatica';
+    font-size: 40px;    
+}
+
+.mainContainer {
+    color: rgb(65, 43, 86);
+    font-family: 'Helvatica';
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.letterBox {
+    display: flex;
+    gap: 8px;
+}
+
+.letterBox input {
+    background-color: rgb(229, 234, 237);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-width: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(63, 63, 99);
+}
