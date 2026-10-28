@@ -9,12 +9,14 @@
 <body>
     <title>Wordle Clone</title>
     <h1 class="title">Wordle</h1>
+    <button id = "startBtn">Start Game</button>
 
-    <div class = "mainContainer">
+    <div class = "mainContainer" id = "gameArea" hidden>
         <div class = "letterBox" id = "column1">
             <input id = "R1C1" type = "text" maxlength="1">
             <input id = "R1C2" type = "text" maxlength="1">
             <input id = "R1C3" type = "text" maxlength="1">
+            <input id = "R1C4" type = "text" maxlength="1">
             <input id = "R1C4" type = "text" maxlength="1">
         </div>
         <br>
@@ -23,6 +25,7 @@
             <input id = "R2C2" type = "text" maxlength="1">
             <input id = "R2C3" type = "text" maxlength="1">
             <input id = "R2C4" type = "text" maxlength="1">
+            <input id = "R1C5" type = "text" maxlength="1">
         </div>
         <br>
         <div class = "letterBox" id = "column2">
@@ -30,6 +33,7 @@
             <input id = "R3C2" type = "text" maxlength="1">
             <input id = "R3C3" type = "text" maxlength="1">
             <input id = "R3C4" type = "text" maxlength="1">
+            <input id = "R1C5" type = "text" maxlength="1">
         </div>
         <br>
         <div class = "letterBox" id = "column2">
@@ -37,10 +41,24 @@
             <input id = "R4C2" type = "text" maxlength="1">
             <input id = "R4C3" type = "text" maxlength="1">
             <input id = "R4C4" type = "text" maxlength="1">
+            <input id = "R1C5" type = "text" maxlength="1">
         </div>
-        <p id = "AnswerBox">Blah</p>
+        <br>
+        <div class = "letterBox" id = "column2">
+            <input id = "R5C1" type = "text" maxlength="1">
+            <input id = "R5C2" type = "text" maxlength="1">
+            <input id = "R5C3" type = "text" maxlength="1">
+            <input id = "R5C4" type = "text" maxlength="1">
+            <input id = "R1C5" type = "text" maxlength="1">
+        </div>
+        <p id = "AnswerBox">Enter your guess</p>
+        <button id = "newgameBtn" hidden>New Game</button>
     </div>
-    <button>New Game</button>
+
+    <section id = "historyArea">
+        <h2>Game History</h2>
+        <ul id = "historyList"></ul>
+    </section>
 
     <script src = "index.js"></script>
 </body>
